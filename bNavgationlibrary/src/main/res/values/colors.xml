@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary1">#008557</color>
+    <color name="colorPrimaryDark1">#00534B</color>
+
+    <color name="t_bottom_selected_color">#DEE0E2</color>
+    <color name="t_bottom_unselected_color">#ffffff</color>
+</resources>
