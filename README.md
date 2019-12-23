@@ -16,7 +16,6 @@ dependencies {
 	implementation 'com.github.bigSnck:TDialogLibrary:1.0.1'
 }
 ```
-
 ### 具体使用Demo<br>
 #### 通常普通用法<br>
 ##### 代码：<br>
@@ -48,9 +47,7 @@ dependencies {
                 }).build();
 
 mLlBottom.addView(bottomNavigationBar.getBottomView());
-
-
-##### 效果图：<br>
-
-<img src="https://github.com/bigSnck/TBottomNavgationBar/blob/master/image/bottom.gif" width="300" height="500"/> 
 ```
+##### 效果图：<br>
+<img src="https://github.com/bigSnck/TBottomNavgationBar/blob/master/image/bottom.gif" width="300" height="500"/> 
+
