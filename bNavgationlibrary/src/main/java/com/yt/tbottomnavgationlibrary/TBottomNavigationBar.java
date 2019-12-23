@@ -19,9 +19,20 @@ public class TBottomNavigationBar extends AbsBottomNavBar {
 
     private Builder mBuilder;
 
+
+
     public TBottomNavigationBar(Builder builder) {
         super(builder);
         mBuilder = builder;
+    }
+
+    /**
+     * 获得当前的位置
+     * @return
+     */
+    public int getCurrentPosition(){
+
+        return mBuilder.mCurrentPosition;
     }
 
     public ViewGroup getBottomView() {

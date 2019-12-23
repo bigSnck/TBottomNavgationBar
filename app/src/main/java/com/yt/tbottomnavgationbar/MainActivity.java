@@ -34,27 +34,29 @@ public class MainActivity extends AppCompatActivity {
         mList.add(new DefaultDataBean("我的", R.mipmap.me1, R.mipmap.me, R.color.unselected_text_color, R.color.selected_text_color, false));
 
 
-        TBottomNavigationBar bottomNavigationBar = new TBottomNavigationBar.Builder(this, new DefaultBottomAdapter(this, mList))
+        final TBottomNavigationBar bottomNavigationBar = new TBottomNavigationBar.Builder(this, new DefaultBottomAdapter(this, mList))
                 .showBottomLine(true, getResources().getColor(R.color.colorPrimary), 2)
                 .showTopLine(true, getResources().getColor(R.color.colorPrimary), 2)
-                .clickItemAnimation(true)
                 .setSelectedPosition(2)
-                .setTabStyle(IBottomStyle.STYLE_QQ)
+                .setTabStyle(IBottomStyle.STYLE_Common)
                 .setTabClickStyle(true)
                 .setSelectedCallback(new IBottomNavSelectedCallback() {
                     @Override
                     public void filterSelect(int postion, View view) {
-                        Toast.makeText(MainActivity.this, "filter=" + postion, Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this, "点击不可以刷新=" + postion, Toast.LENGTH_SHORT).show();
+
 
                     }
 
                     @Override
                     public void unFilterSelect(int postion, View view) {
-                        Toast.makeText(MainActivity.this, "unFilter=" + postion, Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this, "点击可以刷新=" + postion, Toast.LENGTH_SHORT).show();
 
                     }
                 }).build();
 
         mLlBottom.addView(bottomNavigationBar.getBottomView());
+
+       int pos= bottomNavigationBar.getCurrentPosition();
     }
 }

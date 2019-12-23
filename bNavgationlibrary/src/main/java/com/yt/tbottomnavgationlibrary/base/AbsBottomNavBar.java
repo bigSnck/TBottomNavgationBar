@@ -29,7 +29,7 @@ public abstract class AbsBottomNavBar {
         protected int mTopLineViewHeight = 1;
         protected int mBottomTLineViewHeight = 1;
 
-        protected boolean mIsClickAnimation = false;
+
 
         protected IBottomStyle mStyle = IBottomStyle.STYLE_Common;
 
@@ -84,12 +84,6 @@ public abstract class AbsBottomNavBar {
             mBottomTLineViewHeight = bottomTLineViewHeight;
             return (T) this;
         }
-
-        public T clickItemAnimation(boolean b) {
-            mIsClickAnimation = b;
-            return (T) this;
-        }
-
 
         public T setSelectedCallback(IBottomNavSelectedCallback iBottomNavSelectedCallback) {
             mIBottomNavSelectedCallback = iBottomNavSelectedCallback;
