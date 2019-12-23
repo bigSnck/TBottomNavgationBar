@@ -30,7 +30,7 @@ dependencies {
                 .showTopLine(true, getResources().getColor(R.color.colorPrimary), 2)//设置顶部的线
                 .clickItemAnimation(true) 
                 .setSelectedPosition(2) //设置选中默认的位置
-                .setTabStyle(IBottomStyle.STYLE_Common) //设置样式
+                .setTabStyle(IBottomStyle.STYLE_Common) //设置样式 STYLE_QQ:仿QQ STYLE_Common:通用的
                 .setTabClickStyle(true) //是否设置点击动画
                 .setSelectedCallback(new IBottomNavSelectedCallback() {
                     @Override
