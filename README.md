@@ -52,5 +52,5 @@ mLlBottom.addView(bottomNavigationBar.getBottomView());
 
 ##### 效果图：<br>
 
-<img src="https://github.com/bigSnck/TDialogLibrary/blob/master/image/style_a.png" width="300" height="500"/> 
+<img src="https://github.com/bigSnck/TBottomNavgationBar/blob/master/image/bottom.gif" width="300" height="500"/> 
 ```
